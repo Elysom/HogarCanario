@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'CANIS';
+    src: url(assets/CANIS-MAJOR.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'SOUL';
+    src: url(assets/SoulwayFont-Demo-Shadow.otf) format('opentype');
+}
+
+
+h1 {
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+    margin-top: 2rem;
+}
