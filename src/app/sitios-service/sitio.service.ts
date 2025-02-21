@@ -8,7 +8,7 @@ import { Sitio } from './sitio.model';
   providedIn: 'root'
 })
 export class SitiosService {
-  private apiUrl = 'http://localhost:3000/api/sitios';
+  private apiUrl = 'https://hogarcanario.onrender.com/api/sitios/';
 
   constructor(private http: HttpClient) {}
 
