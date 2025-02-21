@@ -5,7 +5,7 @@ import { catchError, of } from 'rxjs';
 
 @Component({
   selector: 'app-sitios',
-  imports: [SitiosComponent],
+  imports: [],
   templateUrl: './sitios.component.html',
   styleUrl: './sitios.component.css'
 })
