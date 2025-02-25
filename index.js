@@ -11,6 +11,19 @@ const sitiosFamosos = [
     imagen: "images/sitios/playacanteras.jpg",
     tipo: "Naturaleza",
     isla: "Gran Canaria"
+  },  {
+    nombre: "Garachico",
+    descripcion: "Un pintoresco pueblo con piscinas naturales formadas por lava volcánica.",
+    imagen: "images/sitios/garachico.jpg",
+    tipo: "Cultura",
+    isla: "Tenerife"
+  },
+  {
+    nombre: "Parque Nacional de Timanfaya",
+    descripcion: "Paisajes volcánicos impresionantes con actividad geotérmica.",
+    imagen: "images/sitios/timanfaya.jpg",
+    tipo: "Naturaleza",
+    isla: "Lanzarote"
   },
   {
     nombre: "Roque Nublo",
@@ -32,6 +45,19 @@ const sitiosFamosos = [
     imagen: "images/sitios/cuevapintada.jpg",
     tipo: "Monumento",
     isla: "Gran Canaria"
+  },  {
+    nombre: "Betancuria",
+    descripcion: "La antigua capital de Fuerteventura, con encanto colonial.",
+    imagen: "images/sitios/betancuria.jpg",
+    tipo: "Cultura",
+    isla: "Fuerteventura"
+  },
+  {
+    nombre: "Parque Nacional de la Caldera de Taburiente",
+    descripcion: "Un enorme cráter con senderos y bosques impresionantes.",
+    imagen: "images/sitios/caldera-taburiente.jpg",
+    tipo: "Naturaleza",
+    isla: "La Palma"
   },
   {
     nombre: "Puerto de Mogán",
@@ -53,6 +79,19 @@ const sitiosFamosos = [
     imagen: "images/sitios/picodelasnieves.jpg",
     tipo: "Naturaleza",
     isla: "Gran Canaria"
+  },  {
+    nombre: "Mirador del Río",
+    descripcion: "Un mirador espectacular diseñado por César Manrique.",
+    imagen: "images/sitios/mirador-rio.jpg",
+    tipo: "Monumento",
+    isla: "Lanzarote"
+  },
+  {
+    nombre: "Parque Natural de Corralejo",
+    descripcion: "Dunas doradas y playas de agua cristalina en el norte de la isla.",
+    imagen: "images/sitios/corralejo.jpg",
+    tipo: "Naturaleza",
+    isla: "Fuerteventura"
   },
   {
     nombre: "Jardín Botánico Viera y Clavijo",
@@ -118,6 +157,20 @@ const sitiosFamosos = [
     isla: "Gran Canaria"
   },
   {
+    nombre: "Mirador de Abrante",
+    descripcion: "Un mirador con suelo de cristal sobre el acantilado.",
+    imagen: "images/sitios/mirador-abrante.jpg",
+    tipo: "Monumento",
+    isla: "La Gomera"
+  },
+  {
+    nombre: "Mirador de La Peña",
+    descripcion: "Un mirador diseñado por César Manrique con vistas espectaculares.",
+    imagen: "images/sitios/mirador-peña.jpg",
+    tipo: "Monumento",
+    isla: "El Hierro"
+  },
+  {
     nombre: "San Mateo",
     descripcion: "Un pueblo rural con uno de los mercados agrícolas más tradicionales de la isla.",
     imagen: "images/sitios/sanmateo.jpg",
@@ -174,22 +227,6 @@ const sitiosFamosos = [
     isla: "Tenerife"
   },
   {
-    nombre: "Garachico",
-    descripcion: "Un pintoresco pueblo con piscinas naturales formadas por lava volcánica.",
-    imagen: "images/sitios/garachico.jpg",
-    tipo: "Cultura",
-    isla: "Tenerife"
-  },
-
-  // Lanzarote
-  {
-    nombre: "Parque Nacional de Timanfaya",
-    descripcion: "Paisajes volcánicos impresionantes con actividad geotérmica.",
-    imagen: "images/sitios/timanfaya.jpg",
-    tipo: "Naturaleza",
-    isla: "Lanzarote"
-  },
-  {
     nombre: "Cueva de los Verdes",
     descripcion: "Un túnel volcánico con una historia fascinante.",
     imagen: "images/sitios/cueva-los-verdes.jpg",
@@ -211,22 +248,6 @@ const sitiosFamosos = [
     isla: "Lanzarote"
   },
   {
-    nombre: "Mirador del Río",
-    descripcion: "Un mirador espectacular diseñado por César Manrique.",
-    imagen: "images/sitios/mirador-rio.jpg",
-    tipo: "Monumento",
-    isla: "Lanzarote"
-  },
-
-  // Fuerteventura
-  {
-    nombre: "Parque Natural de Corralejo",
-    descripcion: "Dunas doradas y playas de agua cristalina en el norte de la isla.",
-    imagen: "images/sitios/corralejo.jpg",
-    tipo: "Naturaleza",
-    isla: "Fuerteventura"
-  },
-  {
     nombre: "Isla de Lobos",
     descripcion: "Un islote virgen con senderos y playas paradisíacas.",
     imagen: "images/sitios/isla-de-lobos.jpg",
@@ -246,22 +267,6 @@ const sitiosFamosos = [
     imagen: "images/sitios/cofete.webp",
     tipo: "Naturaleza",
     isla: "Fuerteventura"
-  },
-  {
-    nombre: "Betancuria",
-    descripcion: "La antigua capital de Fuerteventura, con encanto colonial.",
-    imagen: "images/sitios/betancuria.jpg",
-    tipo: "Cultura",
-    isla: "Fuerteventura"
-  },
-
-  // La Palma
-  {
-    nombre: "Parque Nacional de la Caldera de Taburiente",
-    descripcion: "Un enorme cráter con senderos y bosques impresionantes.",
-    imagen: "images/sitios/caldera-taburiente.jpg",
-    tipo: "Naturaleza",
-    isla: "La Palma"
   },
   {
     nombre: "Roque de los Muchachos",
@@ -318,22 +323,6 @@ const sitiosFamosos = [
     imagen: "images/sitios/organos.jpg",
     tipo: "Naturaleza",
     isla: "La Gomera"
-  },
-  {
-    nombre: "Mirador de Abrante",
-    descripcion: "Un mirador con suelo de cristal sobre el acantilado.",
-    imagen: "images/sitios/mirador-abrante.jpg",
-    tipo: "Monumento",
-    isla: "La Gomera"
-  },
-
-  // El Hierro
-  {
-    nombre: "Mirador de La Peña",
-    descripcion: "Un mirador diseñado por César Manrique con vistas espectaculares.",
-    imagen: "images/sitios/mirador-peña.jpg",
-    tipo: "Monumento",
-    isla: "El Hierro"
   },
   {
     nombre: "Charco Azul",
