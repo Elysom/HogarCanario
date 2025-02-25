@@ -123,7 +123,48 @@ const sitiosFamosos = [
     descripcion: "Un museo en Las Palmas de Gran Canaria que explora la relación de Colón con las islas.",
     imagen: "images/sitios/casacolon.jpg",
     tipo: "Cultura"
-  }
+  },
+  // Tenerife
+  { nombre: "Teide", descripcion: "El pico más alto de España y un Parque Nacional espectacular.", imagen: "images/sitios/teide.jpg", tipo: "Naturaleza" },
+  { nombre: "Loro Parque", descripcion: "Un zoológico y acuario famoso por sus espectáculos de animales.", imagen: "images/sitios/loro-parque.jpg", tipo: "Cultura" },
+  { nombre: "Auditorio de Tenerife", descripcion: "Una obra arquitectónica icónica de Santiago Calatrava.", imagen: "images/sitios/auditorio.jpg", tipo: "Monumento" },
+  { nombre: "Playa de las Teresitas", descripcion: "Una playa paradisíaca con arena dorada traída del Sahara.", imagen: "images/sitios/teresitas.jpg", tipo: "Naturaleza" },
+  { nombre: "Garachico", descripcion: "Un pintoresco pueblo con piscinas naturales formadas por lava volcánica.", imagen: "images/sitios/garachico.jpg", tipo: "Cultura" },
+
+  // Lanzarote
+  { nombre: "Parque Nacional de Timanfaya", descripcion: "Paisajes volcánicos impresionantes con actividad geotérmica.", imagen: "images/sitios/timanfaya.jpg", tipo: "Naturaleza" },
+  { nombre: "Cueva de los Verdes", descripcion: "Un túnel volcánico con una historia fascinante.", imagen: "images/sitios/cueva-los-verdes.jpg", tipo: "Naturaleza" },
+  { nombre: "Jameos del Agua", descripcion: "Un espacio artístico y natural creado por César Manrique.", imagen: "images/sitios/jameos.jpg", tipo: "Cultura" },
+  { nombre: "Playa de Papagayo", descripcion: "Una de las playas más hermosas de Lanzarote con aguas turquesas.", imagen: "images/sitios/papayo.jpg", tipo: "Naturaleza" },
+  { nombre: "Mirador del Río", descripcion: "Un mirador espectacular diseñado por César Manrique.", imagen: "images/sitios/mirador-rio.jpg", tipo: "Monumento" },
+
+  // Fuerteventura
+  { nombre: "Parque Natural de Corralejo", descripcion: "Dunas doradas y playas de agua cristalina en el norte de la isla.", imagen: "images/sitios/corralejo.jpg", tipo: "Naturaleza" },
+  { nombre: "Isla de Lobos", descripcion: "Un islote virgen con senderos y playas paradisíacas.", imagen: "images/sitios/isla-de-lobos.jpg", tipo: "Naturaleza" },
+  { nombre: "Cueva del Llano", descripcion: "Un tubo volcánico subterráneo con una fauna única.", imagen: "images/sitios/cueva-del-llano.jpg", tipo: "Naturaleza" },
+  { nombre: "Playa de Cofete", descripcion: "Una playa salvaje y aislada con paisajes impresionantes.", imagen: "images/sitios/cofete.webp", tipo: "Naturaleza" },
+  { nombre: "Betancuria", descripcion: "La antigua capital de Fuerteventura, con encanto colonial.", imagen: "images/sitios/betancuria.jpg", tipo: "Cultura" },
+
+  // La Palma
+  { nombre: "Parque Nacional de la Caldera de Taburiente", descripcion: "Un enorme cráter con senderos y bosques impresionantes.", imagen: "images/sitios/caldera-taburiente.jpg", tipo: "Naturaleza" },
+  { nombre: "Roque de los Muchachos", descripcion: "El punto más alto de la isla, con observatorios astronómicos.", imagen: "images/sitios/roque-muchachos.jpg", tipo: "Naturaleza" },
+  { nombre: "Bosque de los Tilos", descripcion: "Un frondoso bosque de laurisilva con cascadas y senderos.", imagen: "images/sitios/bosque-tilos.jpg", tipo: "Naturaleza" },
+  { nombre: "Volcán de San Antonio", descripcion: "Un cráter volcánico con un mirador impresionante.", imagen: "images/sitios/volcan-san-antonio.jpg", tipo: "Naturaleza" },
+  { nombre: "Santa Cruz de La Palma", descripcion: "Una ciudad colonial con balcones tradicionales y calles empedradas.", imagen: "images/sitios/santa-cruz.jpg", tipo: "Cultura" },
+
+  // La Gomera
+  { nombre: "Parque Nacional de Garajonay", descripcion: "Un bosque subtropical de laurisilva declarado Patrimonio de la Humanidad.", imagen: "images/sitios/garajonay.jpg", tipo: "Naturaleza" },
+  { nombre: "Valle Gran Rey", descripcion: "Un destino costero con playas, acantilados y senderos.", imagen: "images/sitios/vaye-gran-rey.jpg", tipo: "Naturaleza" },
+  { nombre: "San Sebastián de La Gomera", descripcion: "Capital de la isla con historia vinculada a Cristóbal Colón.", imagen: "images/sitios/san-sevastian.jpg", tipo: "Cultura" },
+  { nombre: "Los Órganos", descripcion: "Un espectacular acantilado de roca basáltica en forma de tubos de órgano.", imagen: "images/sitios/organos.jpg", tipo: "Naturaleza" },
+  { nombre: "Mirador de Abrante", descripcion: "Un mirador con suelo de cristal sobre el acantilado.", imagen: "images/sitios/mirador-abrante.jpg", tipo: "Monumento" },
+
+  // El Hierro
+  { nombre: "Mirador de La Peña", descripcion: "Un mirador diseñado por César Manrique con vistas espectaculares.", imagen: "images/sitios/mirador-peña.jpg", tipo: "Monumento" },
+  { nombre: "Charco Azul", descripcion: "Una piscina natural de aguas cristalinas entre lava volcánica.", imagen: "images/sitios/charco-azul.jpg", tipo: "Naturaleza" },
+  { nombre: "El Sabinar", descripcion: "Un bosque de sabinas con formas retorcidas por el viento.", imagen: "images/sitios/sabinar.jpg", tipo: "Naturaleza" },
+  { nombre: "La Restinga", descripcion: "Un pequeño pueblo pesquero con algunos de los mejores fondos marinos de Canarias.", imagen: "images/sitios/restinga.jpg", tipo: "Cultura" },
+  { nombre: "Faro de Orchilla", descripcion: "El punto más occidental de España y antiguo meridiano 0.", imagen: "images/sitios/faro-orchilla.jpg", tipo: "Monumento" }
 ];
 //Usamos cors para permitir peticiones desde cualquier origen(Dado a que tenemos la página en otro puerto)
 app.use(cors());
