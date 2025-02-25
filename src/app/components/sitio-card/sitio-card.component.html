@@ -1,9 +1,11 @@
 <div class="card">
-    <img [src]="sitio.imagen" [alt]="sitio.nombre" class="card-img">
-    <div class="card-body">
-      <h3>{{ sitio.nombre }}</h3>
-      <p>{{ sitio.descripcion }}</p>
-      <span class="tag" [ngClass]="sitio.tipo.toLowerCase()">{{ sitio.tipo }}</span>
-    </div>
+  <img [src]="sitio.imagen" [alt]="sitio.nombre" class="card-img">
+  <div class="card-body">
+    <h3>{{ sitio.nombre }}</h3>
+    <p>{{ sitio.descripcion }}</p>
+    <span class="tag" [ngClass]="sitio.tipo.toLowerCase()">{{ sitio.tipo }}</span>
   </div>
-  
+  <!-- El texto que aparecerá al hacer hover -->
+  <div class="hover-text">{{ sitio.isla }}</div>
+
+</div>

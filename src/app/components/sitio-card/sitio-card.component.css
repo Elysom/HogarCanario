@@ -6,7 +6,6 @@
     overflow: hidden;
     transition: transform 0.2s;
   }
-  
   .card:hover {
     transform: scale(1.05);
   }
@@ -43,4 +42,22 @@
   .monumento {
     background-color: #3F51B5;
     color: white;
+  }
+  .hover-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    visibility: hidden;  /* Inicialmente oculto */
+    opacity: 0; /* Inicialmente invisible */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  .card:hover .hover-text {
+    visibility: visible; /* Muestra el texto al hacer hover */
+    opacity: 1; /* Hace el texto visible */
   }
