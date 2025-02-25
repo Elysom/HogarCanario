@@ -1,6 +1,7 @@
 <!-- Esta página tiene un formulario con valicaciones de regex validation. usa ngif  -->
 <!-- El siguiente div tiene el contenedor que engloba al formulario -->
-<div class="container mt-5" style="max-width: 600px;padding : 20px; border: 1px solid #ccc; border-radius: 5px;">
+<div style="padding-bottom: 2%;"></div>
+<div class="container mt-5" style="max-width: 600px;padding:10px; border: 1px solid #ccc; border-radius: 5px;">
     <h2 style="text-align:center">Contacto</h2>
     <form [formGroup]="contactoForm" (ngSubmit)="enviarFormulario()">
       <div class="mb-3">
@@ -35,4 +36,4 @@
       <button type="submit" class="btn btn-primary" [disabled]="contactoForm.invalid">Enviar</button>
     </form>
   </div>
-<div style="padding-bottom: 50px;"></div>
+  <div style="padding-bottom: 7%;"></div>

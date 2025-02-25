@@ -1,7 +1,11 @@
 .sitios-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    justify-content: left; 
-    gap: 16px;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 16px; /* Espaciado entre elementos */
+  align-items: stretch; /* Todas las tarjetas tendrán la misma altura */
+}
+
+.sitios-container > * {
+  display: flex;
+  flex-direction: column;
+}

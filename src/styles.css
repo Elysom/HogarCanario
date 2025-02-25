@@ -8,6 +8,9 @@
     src: url(assets/SoulwayFont-Demo-Shadow.otf) format('opentype');
 }
 
+body{
+    padding-top: 70px;
+}
 
 h1 {
     font-weight: normal;
