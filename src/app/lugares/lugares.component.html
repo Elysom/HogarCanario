@@ -1,17 +1,30 @@
 <body>
 <div class="container" >
-  <h1 >Explora Gran Canaria</h1>
+  <h1 >Explora Canarias</h1>
   <hr>
   <p style="text-align: center;">Descubre los mejores sitios de Gran Canaria para conocer y rememorar un poco de lo que nos hace únicos</p>
   <hr>
-  <label for="filtro" style="margin-right:10px">Filtrar por tipo:</label>
+
+  <input style="margin-left: 10px;margin-right:10px;" type="text" [(ngModel)]="terminoBusqueda" placeholder="Buscar sitio..." />
+  <label for="filtro" style="margin-right:10px">Tipo:</label>
   <select [(ngModel)]="filtroTipo">
       <option value="">Todos</option>
       <option value="Cultura">Cultura</option>
       <option value="Naturaleza">Naturaleza</option>
       <option value="Monumento">Monumento</option>
   </select>
-  <input style="margin-left: 10px;" type="text" [(ngModel)]="terminoBusqueda" placeholder="Buscar sitio..." />
+  <label for="isla" style="margin-right:10px;margin-left: 10px;">Isla:</label>
+  <select [(ngModel)]="filtroIsla">
+    <option value="">Todas</option>
+    <option value="Tenerife">Tenerife</option>
+    <option value="Fuerteventura">Fuerteventura</option>
+    <option value="Gran Canaria">Gran Canaria</option>
+    <option value="Lanzarote">Lanzarote</option>
+    <option value="La Palma">La Palma</option>
+    <option value="La Gomera">La Gomera</option>
+    <option value="El Hierro">El Hierro</option>
+    <option value="La Graciosa">La Graciosa</option>
+  </select>
   <h2>Lista de Sitios</h2>
   <div class="sitios-container">
     <app-sitio-card *ngFor="let sitio of sitiosFiltrados" [sitio]="sitio"></app-sitio-card>

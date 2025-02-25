@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-lugares',
-  imports: [SitioCardComponent, CommonModule,FormsModule],
+  imports: [SitioCardComponent, CommonModule, FormsModule],
   templateUrl: './lugares.component.html',
   styleUrl: './lugares.component.css'
 })
@@ -16,6 +16,7 @@ export class LugaresComponent {
   sitios: Sitio[] = [];
   sitioAleatorio?: Sitio;
   filtroTipo: string = '';
+  filtroIsla: string = '';  // Filtro por isla
   terminoBusqueda: string = '';
 
   constructor(private sitiosService: SitiosService) {}
@@ -43,7 +44,23 @@ export class LugaresComponent {
   }
 
   get sitiosFiltrados(): Sitio[] {
-    let sitiosFiltrados = this.filtroTipo ? this.sitios.filter(s => s.tipo === this.filtroTipo) : this.sitios;
-    return this.terminoBusqueda ? sitiosFiltrados.filter(s => s.nombre.toLowerCase().includes(this.terminoBusqueda.toLowerCase())) : sitiosFiltrados;
+    let sitiosFiltrados = this.sitios;
+
+    // Filtrar por tipo si se ha seleccionado uno
+    if (this.filtroTipo) {
+      sitiosFiltrados = sitiosFiltrados.filter(s => s.tipo === this.filtroTipo);
+    }
+
+    // Filtrar por isla si se ha seleccionado una
+    if (this.filtroIsla) {
+      sitiosFiltrados = sitiosFiltrados.filter(s => s.isla === this.filtroIsla);
+    }
+
+    // Filtrar por término de búsqueda
+    if (this.terminoBusqueda) {
+      sitiosFiltrados = sitiosFiltrados.filter(s => s.nombre.toLowerCase().includes(this.terminoBusqueda.toLowerCase()));
+    }
+
+    return sitiosFiltrados;
   }
 }
