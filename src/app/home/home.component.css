@@ -1,6 +1,7 @@
 .destination-section {
     padding: 60px 0;
     background-color: #f8f9fa;
+    position: relative;
 }
 .card {
     margin-bottom: 30px;
@@ -49,5 +50,4 @@
     line-height: 1.6;
     color: #666;
 }
-
 
